@@ -36,4 +36,6 @@ public class ItemNaFila {
 	public void setTempoDeEspera(long tempoDeEspera) {
 		this.tempoDeEspera = tempoDeEspera;
 	}	
+	
+	
 }
