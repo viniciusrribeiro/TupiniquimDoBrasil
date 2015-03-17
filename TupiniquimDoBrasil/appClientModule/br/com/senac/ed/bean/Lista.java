@@ -1,14 +1,16 @@
+
 package br.com.senac.ed.bean;
 
-public class List<T> {
+
+public class Lista<T> {
 
 	private No <T> primeiro;
 	
-	public List(){
-		
+	public Lista(){
 		primeiro = null;
 	}
 	
+		
 	public void inserir (T elemento){
 		
 		if (primeiro == null){
@@ -28,7 +30,16 @@ public class List<T> {
 		}
 		
 		
+		
 		}
+	
+	 public void remover (){
+		
+		 
+
+	 }
 	}
+
+
 
 

@@ -34,4 +34,6 @@ public class Documento {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
+	
+	
 }

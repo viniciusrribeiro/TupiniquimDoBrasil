@@ -3,7 +3,6 @@
  */
 package br.com.senac.ed.bean;
 
-import java.util.Date;
 
 /**
  * Class Pessoa, representa uma pessoa genérica.
@@ -12,8 +11,11 @@ import java.util.Date;
  */
 public abstract class Pessoa {
 	//atributos
-	private String nome;
-	private Date dtNascimento;
+	protected String nome;
+	protected int idade;
+	protected double possibilidade = 0.0;
+
+	
 	
 	//getters and setters
 	public String getNome() {
@@ -22,10 +24,12 @@ public abstract class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Date getDtNascimento() {
-		return dtNascimento;
+	public int getDtNascimento() {
+		return idade;
 	}
-	public void setDtNascimento(Date dtNascimento) {
-		this.dtNascimento = dtNascimento;
+	public void setDtNascimento(int idade) {
+		this.idade = idade;
 	}
+	
+	
 }

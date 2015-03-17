@@ -11,4 +11,22 @@ package br.com.senac.ed.bean;
  */
 public class PessoaNormal extends Pessoa{
 	
+	public PessoaNormal (){
+		
+		super();
+	}
+	
+	double possibilidade = 0.0;
+
+	public double getPossibilidade() {
+		
+		return possibilidade;
+	}
+
+	public void setPossibilidade(double possibilidade){
+		
+		this.possibilidade = possibilidade;
+	}
+	
+	
 }

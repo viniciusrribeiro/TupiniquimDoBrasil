@@ -1,17 +1,13 @@
-/**
- * 
- */
+
 package br.com.senac.ed.bean;
 
-/**
- * @author rcabral
- *
- */
+
 public class Caixa {
 	//atributos
 	private String atendente;
 	private long contabil;
 	private long tempoAtendimento;
+	private boolean vazio;
 	
 	//getters and setters
 	public String getAtendente() {
@@ -32,4 +28,18 @@ public class Caixa {
 	public void setTempoAtendimento(long tempoAtendimento) {
 		this.tempoAtendimento = tempoAtendimento;
 	}
+	
+	public boolean getCaixaVazio(){
+		return vazio;
+				
+	}
+	
+	public void setCaixaVazio(boolean vazio){
+		this.vazio = vazio;
+			
+	}
+	
+	
+	
+	
 }
