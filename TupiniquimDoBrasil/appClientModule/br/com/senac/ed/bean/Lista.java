@@ -2,29 +2,30 @@
 package br.com.senac.ed.bean;
 
 
-public class Lista<T> {
+@SuppressWarnings("hiding")
+public class Lista<Pessoa> {
 
-	private No <T> primeiro;
+	private No <Pessoa> primeiro;
 	
 	public Lista(){
 		primeiro = null;
 	}
 	
 		
-	public void inserir (T elemento){
+	public void inserir (Pessoa elemento){
 		
 		if (primeiro == null){
-			No <T> first = new No <T> (elemento);
+			No <Pessoa> first = new No <Pessoa> (elemento);
 			first.setProximo(this.primeiro);			
 			this.primeiro = first;
-			No <T> novo = new No <T> (elemento);
+			No <Pessoa> novo = new No <Pessoa> (elemento);
 			novo.setElemento(elemento);
 			novo.setProximo(null);
 			
 		}	
 		
 		else {
-			No <T> novo = new No <T> (elemento);
+			No <Pessoa> novo = new No <Pessoa> (elemento);
 			novo.setElemento(elemento);
 			novo.setProximo(null);	
 		}
